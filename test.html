@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/*h3:first-line {color:green;}
+	label { color: white;}
+	input:focus { background-color:  red;}
+	input:click + label { background-color: gray;}
+	*/
+	#wrap { width : 500px; margin :auto; }
+	.nav ul{ display: flex; list-style: none; justify-content: flex-end; }
+	.nav ul li{ padding: 10px 10px ; background-color: red; margin-right: 10px;}
+	.nav ul li:hover { background-color: green;}
+	a{ text-decoration: none;}
+	img{width: 100%;}
+	input:focus { background-color: blue; }
+	
+	.re{ color : white; }
+	.click:active + .re { background-color: gray;}
+	
+</style>
+</head>
+<body>
+<div id = "wrap">
+	<div class = "nav">
+		<ul>
+			<li><a href = "#1"> 1번 문제로 이동</a></li>
+			<li><a href = "#2"> 2번 문제로 이동</a></li>
+			<li><a href = "#3"> 3번 문제로 이동</a></li>
+			<li><a href = "#4"> 4번 문제로 이동</a></li>
+		</ul>
+	</div>
+	<div>
+		<img src = "resources/images/quiz.png">
+	</div>
+	<div>
+	<h2>정답 확인 클릭시 정답 보여짐</h2>
+	<h2 id = "1">문제 1) 정적 언어는?</h2>
+	정답 작성<input type = "text">
+	<label class = "click">정답 클릭 확인</label>
+	<label class="re">html, javascript, css 등</label> 
+	</div>
+
+</body>
+</html>
